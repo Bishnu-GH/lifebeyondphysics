@@ -1,5 +1,5 @@
 .u-section-1 .u-sheet-1 {
-  min-height: 1102px;
+  min-height: 0;
 }
 
 .u-section-1 .u-text-1 {
@@ -70,7 +70,7 @@
 }
 
 .u-section-1 .u-text-10 {
-  margin: 20px 0 60px;
+  margin: 20px 0 0;
 }
 
 @media (max-width: 991px) {
@@ -147,7 +147,7 @@
   }
 }.u-section-2 .u-line-1 {
   width: 912px;
-  margin: 0 auto 0 0;
+  margin: 30px auto 0 0;
 }
 
 .u-section-2 .u-text-3 {
@@ -236,4 +236,21 @@
   .u-section-2 .u-line-4 {
     width: 340px;
   }
+}
+
+/* Inner spacing for the real <p>/<ul>/<li> markup (replaces the old &nbsp; and <br> bullet hacks) */
+.u-section-1 .u-text p,
+.u-section-2 .u-text p {
+  margin: 0;
+}
+
+.u-section-1 .u-text p:not(:first-child) {
+  margin-top: 12px;
+}
+
+.u-section-1 .u-text ul,
+.u-section-2 .u-text ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: disc;
 }
