@@ -254,3 +254,55 @@
   padding-left: 1.5rem;
   list-style: disc;
 }
+
+
+/* ---- Gap fix: force compact spacing so nothing in nicepage.css can inflate it ---- */
+.u-section-1,
+.u-section-2,
+.u-section-1 .u-sheet-1,
+.u-section-2 .u-sheet-1 {
+  min-height: 0 !important;
+  height: auto !important;
+}
+
+.u-section-1 .u-sheet-1,
+.u-section-2 .u-sheet-1 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.u-section-2 .u-sheet-1 {
+  padding-bottom: 60px !important;
+}
+
+.u-section-1 .u-text,
+.u-section-2 .u-text {
+  min-height: 0 !important;
+  height: auto !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.u-section-1 .u-text ul,
+.u-section-2 .u-text ul {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.u-section-1 .u-text li,
+.u-section-2 .u-text li {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.u-section-1 .u-line,
+.u-section-2 .u-line {
+  margin-bottom: 0 !important;
+}
+
+.u-section-2 .u-line-1 {
+  margin-top: 30px !important;
+}
